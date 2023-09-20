@@ -20,32 +20,5 @@ const AppList = () => {
   );
 };
 
-// A custom PrivateRoute component to protect the gallery route
-const PrivateRoute = ({ element: Element, ...rest }) => {
-  const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    // Listen for changes in the user's authentication state
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setUser(user);
-    });
-
-    // Clean up the subscription when the component unmounts
-    return () => unsubscribe();
-  }, []);
-
-  return (
-    <Route
-      {...rest}
-      element={
-        user ? (
-          <Element />
-        ) : (
-          <Navigate to="/login" />
-        )
-      }
-    />
-  );
-};
 
 export default AppList;

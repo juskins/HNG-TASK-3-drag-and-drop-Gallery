@@ -4,7 +4,6 @@ import { BrowserRouter as Router } from 'react-router-dom'; // Import BrowserRou
 
 import './index.css';
 import AppList from './appList';
-import App from './App';
 // import dotenv from 'dotenv';
 
 // dotenv.config(); // Load environment variables from .env file

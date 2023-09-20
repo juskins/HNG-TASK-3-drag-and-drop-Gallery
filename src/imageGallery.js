@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
 import { Images } from './initialImages';
-import { getAuth } from 'firebase/auth';
 import { useAuth } from './firebase'; // Import the useAuth hook
 import SearchBar from './Searchbar';
 

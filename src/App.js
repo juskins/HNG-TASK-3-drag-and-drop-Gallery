@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
-import { useNavigate } from 'react-router-dom'; // Import useHistory from react-router-dom
-import app from './firebase';
+import React from 'react';
+
 
 
 const App = () => {
@@ -9,7 +7,7 @@ const App = () => {
 
   return (
     <div>
-     
+
     </div>
   );
 };
