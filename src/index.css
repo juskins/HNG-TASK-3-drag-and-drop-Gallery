@@ -1,0 +1,180 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(165, 193, 245);
+
+}
+
+
+.App{
+  background-color: rgb(165, 193, 245);
+  width:100%;
+  height: 100vh;
+  
+}
+
+
+.login-container {
+  height: 400px;
+  width: 40%;
+  margin:50px auto;
+}
+
+/* Style the form container */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  row-gap: 10px;
+  background-color: #fff;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Style form headings */
+.login-form h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Style form input fields */
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Style the login button */
+.login-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Style the login button on hover */
+.login-form button:hover {
+  background-color: darkblue;
+}
+
+/* Style error messages */
+.error-message {
+  color: red;
+  max-width: 300px;
+  font-size: 10px;
+  margin-top: 8px;
+}
+
+
+
+/* ImageGallery.css */
+/* ImageGallery.css */
+
+.image-gallery {
+  display: grid;
+  width:100%;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.image-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.image-card:hover {
+  transform: scale(1.05);
+}
+
+.image-card img {
+  width: 100%;
+  height: 80%;
+  max-height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.image-tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-right: 4px;
+  background-color: #0077b6;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+
+/* Search bar */
+
+/* SearchBar.css */
+
+.search-bar {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #0077b6;
+}
+
+
+
+/* CSS for the loading animation */
+.loading-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Set the height to match your gallery container */
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #0077b6;
+  border-radius: 50%;
+  margin: 0 5px;
+  animation: bounce 0.5s ease-in-out infinite; /* Add animation */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust the bounce height as needed */
+  }
+}
