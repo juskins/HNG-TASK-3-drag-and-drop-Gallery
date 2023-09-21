@@ -78,7 +78,7 @@ const ImageGallery = () => {
                           {...provided.dragHandleProps}
                           className="image-card"
                         >
-                          <img src={image.url} alt={`Image ${image.id}`} />
+                          <img src={image.url} alt={`${image.id}`} />
                           <div className="image-tags">
                             <small>Tags: {image.tags.join(' ,')}</small>
                           </div>
