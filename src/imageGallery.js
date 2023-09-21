@@ -26,11 +26,13 @@ const ImageGallery = () => {
   };
 
   const handleSearch = (searchValue) => {
-    setSearchTerm(searchValue);
-    if (searchValue.trim() === '') {
-      setImages(Images);
-    } else {
-      setImages(filterImagesByTag(searchValue));
+    if (searchTerm != null){
+      setSearchTerm(searchValue);
+      if (searchValue.trim() === '') {
+        setImages(Images);
+      } else {
+        setImages(filterImagesByTag(searchValue));
+      }
     }
   };
 

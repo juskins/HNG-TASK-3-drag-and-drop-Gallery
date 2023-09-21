@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom'; // Import necessary components from React Router v6
-import { getAuth, onAuthStateChanged } from 'firebase/auth'; // Import Firebase authentication functions
 
 import LoginForm from './Auth';
 import ImageGallery from './imageGallery';
 
 // Initialize Firebase
-const auth = getAuth();
+// const auth = getAuth();
 
 const AppList = () => {
   return (
