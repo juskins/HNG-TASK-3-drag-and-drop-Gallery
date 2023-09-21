@@ -178,3 +178,27 @@ input[type="text"]:focus {
     transform: translateY(-10px); /* Adjust the bounce height as needed */
   }
 }
+
+
+@media (max-width: 768px) {
+  .login-container {
+    width: 80%; 
+  }
+
+  .login-form {
+    height: auto; 
+  }
+
+  .login-form h1 {
+    font-size: 24px; 
+  }
+
+  .login-form input {
+    font-size: 14px; 
+  }
+
+  .login-form button {
+    padding: 8px 16px; 
+    font-size: 16px; 
+  }
+}
